@@ -19,10 +19,28 @@ describe('Find the maximum', () => {
     expect(typeof maxOfTwoNumbers).toBe('function');
   });
 
+
+
+  function maxOfTwoNumbers(numone,numtwo){
+    for (let i = 0; i< maxOfTwoNumbers.length;i++){
+      if (numone<muntwo){
+        console.log("numone is greater");
+      } else if (numone>numtwo){
+        console.log("numtwo is greater" );
+      } else {
+        console.log("enter a number");
+      }
+    }
+  }
+  maxOfTwoNumbers(numone,numtwo);
+
+
+
   it('should return greater of two arguments - if the first argument greater', () => {
     expect(maxOfTwoNumbers(2, 1)).toBe(2);
     expect(maxOfTwoNumbers(5, -7)).toBe(5);
   });
+
 
   it('should return greater of two arguments - if the second argument greater', () => {
     expect(maxOfTwoNumbers(1, 3)).toBe(3);
@@ -33,6 +51,19 @@ describe('Find the maximum', () => {
     expect(maxOfTwoNumbers(4, 4)).toBe(4);
   });
 });
+
+
+function findLongestWord (){
+  const words = [];
+    for (let i=0; i<words.length;i++){
+      if (words.length[0][i]<words.length[0][i++]){
+        console.log(words.length[0][i]);
+      } else {
+        console.log("enter a valid number");
+      }
+    }
+}
+findLongestWord([mike,spikke,nike,biikkee])
 
 describe('Find the longest word', () => {
   it('should declare a function named findLongestWord', () => {
@@ -60,6 +91,20 @@ describe('Find the longest word', () => {
     }
   });
 });
+
+
+
+function sumNumber(num) {
+let sum = 0;
+  for (let i=0;i<sumNumber.length;i++){
+    if (sumNumber !== number){
+      console.log("enter a number")
+    } else {
+      sum += num;
+    }
+  }
+}
+sumNumber(1,2,3,4,4,5);
 
 describe('Calculate the sum of array of numbers', () => {
   it('should declare a function named sumNumbers', () => {
@@ -127,6 +172,18 @@ describe('Bonus: Calculate the sum', () => {
 
 });
 
+
+
+function averageNumber () {
+  for (let i=0 ;i < averageNumber.length;i++) {   
+    sum += averageNumber;
+    average = sum / 2
+
+  }
+}
+averageNumber(1,454,66,6,6);
+
+
 describe('Calculate the average of an array of numbers', () => {
   it('should declare a function named averageNumbers', () => {
     expect(typeof averageNumbers).toBe('function');
@@ -149,6 +206,19 @@ describe('Calculate the average of an array of numbers', () => {
   });
   
 });
+
+
+function averageWordLength (word){
+const number = 0;
+const middlenum = 0;
+  for (let i = 0 ; i<word.length ; i++){
+    number += word.length[i];
+    middlenum /= 2 ;
+  }
+  console.log(middlenum);
+}
+averageWordLength(sick,biker,cyclist,javascript);
+
 
 describe('Calculate the average of an array of strings', () => {
   it('should declare a function named averageWordLength', () => {
